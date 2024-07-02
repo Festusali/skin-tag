@@ -22,9 +22,29 @@ body {
 }
 
 h1, h2, h3 {
-    text-align: center;
+    color: var(--primary);
 }
 
 h1, h2 {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.text-dark {
+    color: var(--dark);
+}
+
+.text-success {
+    color: var(--success);
+}
+
+.text-danger {
     color: var(--primary);
+}
+
+.strike-through {
+    text-decoration: line-through;
 }
