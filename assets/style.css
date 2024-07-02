@@ -15,10 +15,15 @@
 
 
 body {
-    padding: 0 10px;
+    padding: 20px 10px;
     margin: 0;
     background-color: var(--light);
     color: var(--dark);
+}
+
+main {
+    max-width: 700px;
+    margin: auto;
 }
 
 h1, h2, h3 {
@@ -45,6 +50,39 @@ img {
     color: var(--primary);
 }
 
+.text-center {
+    text-align: center;
+}
+
 .strike-through {
     text-decoration: line-through;
+}
+
+.title {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 15px;
+}
+
+.btn-default {
+    padding: .5rem 1rem;
+    background-color: var(--primary);
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: larger;
+    border-radius: .3rem;
+}
+.btn-default:hover, .btn-default:active {
+    background-color: var(--primary-alt);
+    color: var(--dark);
+}
+
+.px-3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
