@@ -69,7 +69,7 @@ ul {
 }
 
 .btn-default {
-    padding: .5rem 1rem;
+    padding: .7rem 1.5rem;
     background-color: var(--primary);
     color: var(--dark);
     text-decoration: none;
