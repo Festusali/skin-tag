@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: rgb(255,42,82);
+    --primary-alt: rgb(227, 21, 59);
+    --light: rgb(230, 230, 230);
+    --light-alt: lightgray;
+    --dark: #202020;
+    --dark-alt: #151515;
+    --success: #00c800;
+    --success-alt: #00b400;
+}
+
+
+body {
+    padding: 0 10px;
+    margin: 0;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1, h2 {
+    color: var(--primary);
+}
