@@ -92,7 +92,7 @@
         </section>
 
         <h2 class="text-dark">
-            PRICE: <span class="text-success">₦18,000.00</span> <small class="text-danger strike-through">₦25,000.00</small>
+            BUY 1 GET 1 FREE FOR: <span class="text-success">₦18,000.00</span> <small class="text-danger strike-through">₦25,000.00</small>
         </h2>
         <p class="px-3 my-3 text-center">
             <a href="#orderForm" class="btn-default">Order now</a>
@@ -196,7 +196,7 @@
                     Promo Sales!!!
                 </h2>
                 <p>
-                    Order today and enjoy huge discounts.
+                    Order today and enjoy huge discounts. Buy 1 bottle and get 1 free.
                 </p>
                 <p class="action-text text-center">
                     <strong>
@@ -223,7 +223,7 @@
                     <img src="assets/images/guarantee.jpg" class="img-fluid">
                 </p>
 
-                <form name="orderForm" method="POST" onsubmit="return checkForm()" action="#">
+                <form name="orderForm" method="POST" onsubmit="return checkForm()" action="http://127.0.0.1:8815/process-skin-tag-form/">
                     <input type="hidden" name="subject" value="New Order For AONISEN SKIN TAG & WART REMOVER" />
                     <input type="hidden" name="price" value="₦0.00" />
                     <input type="hidden" name="productName" value="AONISEN SKIN TAG & WART REMOVER" />
@@ -249,12 +249,12 @@
                     </div>
                     <div class="row field-row">
                         <div class="col-sm-6 mb-3">
-                            <label for="quantity" class="form-label">Qantity *</label>
+                            <label for="quantity" class="form-label">Quantity *</label>
                             <select name="quantity" id="quantity" required class="form-select">
                                 <option value="" selected="selected">Choose Quantity *</option>
-                                <option value="2">Buy 2 Get 1 Free - ₦18,000</option>
-                                <option value="3">Buy 3 Get 1 Free - ₦25,500</option>
-                                <option value="4">Buy 4 Get 1 Free - ₦32,000</option>
+                                <option value="2">Buy 1 Get 1 Free (2 bottle) - ₦18,000</option>
+                                <option value="3">Buy 2 Get 1 Free (3 bottles) - ₦25,500</option>
+                                <option value="4">Buy 3 Get 1 Free (4 bottles) - ₦32,000</option>
                             </select>
                         </div>
                         <div class="col-sm-6 mb-3">
