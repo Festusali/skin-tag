@@ -1608,7 +1608,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .comment-respond {
-  /*margin-top: 20px;*/
+  margin-top: 20px;
 }
 
 .comments-area .comment-list .children li:last-child {
@@ -1723,6 +1723,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   display: block;
   margin: 8px 0;
   -ms-word-wrap: break-word;
+  word-wrap: break-word;
   word-break: break-word;
 }
 
