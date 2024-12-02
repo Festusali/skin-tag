@@ -7,16 +7,24 @@ function checkForm() {
     price = document.orderForm.price
 
     console.log(orderQty)
+    if (orderQty == 1) {
+        price.value = "₦18,000";
+        return true;
+    }
     if (orderQty == 2) {
-        price.value = "₦18,500";
+        price.value = "₦30,000";
+        return true;
+    }
+    if (orderQty == 3) {
+        price.value = "₦43,500";
         return true;
     }
     if (orderQty == 4) {
-        price.value = "₦36,000";
+        price.value = "₦56,000";
         return true;
     }
-    if (orderQty == 6) {
-        price.value = "₦53,000";
+    if (orderQty == 5) {
+        price.value = "₦65,000";
         return true;
     }
 }
