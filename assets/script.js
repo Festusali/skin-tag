@@ -1,4 +1,4 @@
-// Script for managing orders for AONISEN SKIN TAG & WART REMOVER Website
+// Script for managing orders for SKIN TAG & WART REMOVER Website
 
 // Assigns corresponding value to price based on product quantity
 function checkForm() {
