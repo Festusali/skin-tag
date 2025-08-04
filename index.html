@@ -350,7 +350,14 @@
                                 name="address" id="address" required>
                         </div>
                         <div class="col-sm-6 mb-3">
-                            <button type="submit" class="btn btn-default mt-3">Order Now!</button>
+                            <button type="submit" class="btn btn-default mt-3"
+                            onclick="fbq('track', 'AddToCart', {
+                                content_name: 'SKIN TAG & WART REMOVER',
+                                content_ids: ['KINAXY-004'],
+                                content_type: 'product',
+                                value: 20000.00,
+                                currency: 'NGN'
+                            })">Order Now!</button>
                         </div>
                     </div>
 
