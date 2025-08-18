@@ -26,7 +26,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -43,12 +43,21 @@
 
     <!-- START Purchase event code -->
     <script>
-        fbq('track', 'Purchase', {
-            content_ids: ['KINAXY-004'],
-            content_type: 'product',
-            value: 20000.00,
-            currency: 'NGN'
-        });
+        const orderId = new URLSearchParams(window.location.search).get('order_id');
+        const hasTracked = sessionStorage.getItem(`purchase_${orderId}`);
+        console.log('Order ID: ', orderId)
+        console.log('Already tracked: ', hasTracked)
+
+        if (orderId && !hasTracked) {
+            fbq('track', 'Purchase', {
+                content_ids: [orderId],
+                content_type: 'product',
+                value: 20000.00,
+                currency: 'NGN',
+                event_id: orderId
+            });
+            sessionStorage.setItem(`purchase_${orderId}`, 'true');
+        }
     </script>
     <!-- END Purchase event code -->
     <!-- End New Skin Tag Facebook Pixel Code -->
