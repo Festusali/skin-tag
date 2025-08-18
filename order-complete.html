@@ -45,15 +45,12 @@
     <script>
         const orderId = new URLSearchParams(window.location.search).get('order_id');
         const hasTracked = sessionStorage.getItem(`purchase_${orderId}`);
-        console.log('Order ID: ', orderId)
-        console.log('Already tracked: ', hasTracked)
 
         if (orderId && !hasTracked) {
             fbq('track', 'Purchase', {
                 content_ids: [orderId],
                 content_type: 'product',
                 value: 20000.00,
-                currency: 'NGN',
                 event_id: orderId
             });
             sessionStorage.setItem(`purchase_${orderId}`, 'true');
