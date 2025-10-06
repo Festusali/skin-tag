@@ -4,15 +4,15 @@
 function checkForm() {
   orderQty = document.orderForm.quantity;
   if (orderQty.value == 2) {
-    document.orderForm.price.value = "₦20,000";
+    document.orderForm.price.value = "₦18,500";
     return true;
   }
   if (orderQty.value == 4) {
-    document.orderForm.price.value = "₦35,000";
+    document.orderForm.price.value = "₦30,000";
     return true;
   }
   if (orderQty.value == 6) {
-    document.orderForm.price.value = "₦50,000";
+    document.orderForm.price.value = "₦60,000";
     return true;
   }
 }
