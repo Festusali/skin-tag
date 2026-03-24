@@ -67,11 +67,18 @@
             fbq('track', 'Purchase', {
                 content_ids: [orderId],
                 content_type: 'product',
-                value: 20000.00,
+                value: 22000.00,
                 currency: 'NGN',
                 event_id: orderId
             });
             sessionStorage.setItem(`purchase_${orderId}`, 'true');
+
+            ttq.track('Purchase', {
+                content_id: orderId,
+                content_type: 'product',
+                value: 22000.00,
+                currency: 'NGN'
+            });
         }
     </script>
     <!-- END Purchase event code -->
