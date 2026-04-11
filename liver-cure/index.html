@@ -175,7 +175,7 @@
             </div>
         </div>
     </section>
-    <!-- Deatils Section End -->
+    <!-- Details Section End -->
 
     <!-- Symptoms Section Start -->
     <section class="my-3">
@@ -571,7 +571,21 @@
                                                     <input type="text" class="form-control" placeholder="House No, Street Name & City" name="address" id="address" required>
                                                 </div>
                                                 <div class="col-sm-6 mb-3 btn-wrapper desktop-center">
-                                                    <button type="submit" class="btn btn-default mt-3 boxed-btn">Order Now!</button>
+                                                    <button type="submit" class="btn btn-default mt-3 boxed-btn"
+                                                    onclick="fbq('track', 'AddToCart', {
+                                                        content_name: 'LIVER PURIFYING TEA',
+                                                        content_ids: ['KINAXY-006'],
+                                                        content_type: 'product',
+                                                        value: 20000.00,
+                                                        currency: 'NGN'
+                                                    })
+                                                    ttq.track('AddToCart', {
+                                                        content_id: 'KINAXY-006',
+                                                        content_type: 'product',
+                                                        value: 20000.00,
+                                                        currency: 'NGN'
+                                                    }
+                                                    )">Order Now!</button>
                                                 </div>
                                             </div>
 
