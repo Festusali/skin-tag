@@ -8,23 +8,23 @@ function checkForm() {
 
     console.log(orderQty)
     if (orderQty == 1) {
-        price.value = "₦18,000";
+        price.value = "₦20,000";
         return true;
     }
     if (orderQty == 2) {
-        price.value = "₦30,000";
+        price.value = "₦35,000";
         return true;
     }
     if (orderQty == 3) {
-        price.value = "₦43,500";
+        price.value = "₦51,000";
         return true;
     }
     if (orderQty == 4) {
-        price.value = "₦56,000";
+        price.value = "₦66,000";
         return true;
     }
     if (orderQty == 5) {
-        price.value = "₦65,000";
+        price.value = "₦80,000";
         return true;
     }
 }
