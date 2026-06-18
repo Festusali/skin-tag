@@ -38,30 +38,30 @@ function checkForm() {
 }
 
 // Assign order channel as whatsapp
-document
-  .getElementById("whatsappOrderBtn")
-  .addEventListener("click", function () {
-    const form = document.orderForm;
+// document
+//   .getElementById("whatsappOrderBtn")
+//   .addEventListener("click", function () {
+//     const form = document.orderForm;
 
-    if (!form.reportValidity()) {
-      return;
-    }
+//     if (!form.reportValidity()) {
+//       return;
+//     }
 
-    checkForm();
+//     checkForm();
 
-    const message = {
-      fullname: form.fullname.value,
-      email: form.email.value,
-      phone: form.phone.value,
-      altPhone: form.alt_phone.value,
-      quantity: form.quantity.value,
-      price: form.price.value,
-      state: form.state.value,
-      address: form.address.value,
-      product: form.productName.value,
-    };
+//     const message = {
+//       fullname: form.fullname.value,
+//       email: form.email.value,
+//       phone: form.phone.value,
+//       altPhone: form.alt_phone.value,
+//       quantity: form.quantity.value,
+//       price: form.price.value,
+//       state: form.state.value,
+//       address: form.address.value,
+//       product: form.productName.value,
+//     };
 
-    sessionStorage.setItem("pendingWhatsappOrder", JSON.stringify(message));
-    disableOrderButtons();
-    form.submit();
-  });
+//     sessionStorage.setItem("pendingWhatsappOrder", JSON.stringify(message));
+//     disableOrderButtons();
+//     form.submit();
+//   });
