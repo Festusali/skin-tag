@@ -22,9 +22,9 @@ document.orderForm.addEventListener("submit", function () {
 // Assigns corresponding value to price based on product quantity
 function getPrice(quantity) {
   const prices = {
-    2: "₦22,000",
-    4: "₦35,000",
-    6: "₦52,000",
+    2: "₦24,000",
+    4: "₦40,000",
+    6: "₦54,000",
   };
 
   return prices[quantity] || "₦0.00";
