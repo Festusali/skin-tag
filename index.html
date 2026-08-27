@@ -278,10 +278,14 @@
                 </p>
 
                 <form name="orderForm" method="POST" onsubmit="return checkForm()"
-                    action="https://myform.kinaxy.com/process-skin-tag-form/">
+                    action="https://myform.kinaxy.com/process-order/skin-tag/">
+                    <input type="hidden" name="order_source" value="skin-tag" />
                     <input type="hidden" name="subject" value="New Order For SKIN TAG & WART REMOVER" />
                     <input type="hidden" name="price" value="₦0.00" />
-                    <input type="hidden" name="productName" value="SKIN TAG & WART REMOVER" />
+                    <input type="hidden" name="product_name" value="SKIN TAG & WART REMOVER" />
+                    <input type="hidden" name="product_image_url"
+                        value="https://www.kinaxy.com/assets//images/product-pack.jpg">
+
                     <div class="row field-row">
                         <div class="col-sm-6 mb-3">
                             <label for="fullname" class="form-label">Full Name *</label>

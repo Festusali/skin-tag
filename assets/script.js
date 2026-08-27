@@ -15,11 +15,7 @@ function disableOrderButtons() {
   }
 }
 
-document.orderForm.addEventListener("submit", function () {
-  disableOrderButtons();
-});
-
-// Assigns corresponding value to price based on product quantity
+// Assign corresponding price based on product quantity.
 function getPrice(quantity) {
   const prices = {
     2: "₦24,000",
@@ -32,36 +28,22 @@ function getPrice(quantity) {
 
 function checkForm() {
   const form = document.orderForm;
+
+  if (!form) {
+    return false;
+  }
+
   form.price.value = getPrice(form.quantity.value);
 
   return true;
 }
 
-// Assign order channel as whatsapp
-// document
-//   .getElementById("whatsappOrderBtn")
-//   .addEventListener("click", function () {
-//     const form = document.orderForm;
+// Standard form submission.
+const orderForm = document.orderForm;
 
-//     if (!form.reportValidity()) {
-//       return;
-//     }
-
-//     checkForm();
-
-//     const message = {
-//       fullname: form.fullname.value,
-//       email: form.email.value,
-//       phone: form.phone.value,
-//       altPhone: form.alt_phone.value,
-//       quantity: form.quantity.value,
-//       price: form.price.value,
-//       state: form.state.value,
-//       address: form.address.value,
-//       product: form.productName.value,
-//     };
-
-//     sessionStorage.setItem("pendingWhatsappOrder", JSON.stringify(message));
-//     disableOrderButtons();
-//     form.submit();
-//   });
+if (orderForm) {
+  orderForm.addEventListener("submit", function () {
+    checkForm();
+    disableOrderButtons();
+  });
+}
